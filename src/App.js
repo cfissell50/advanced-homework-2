@@ -1,36 +1,17 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
 
 function App(props) {
     return (
       <div className="App">
         	<div className="wrap">
-	
+
 			<div className="header">
-	
-			<div className="top-header">
-				<div className="top-header-left">
-					<ul>
-						<li className="active"><a href="#">Home</a></li>
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">Delivery</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div className="top-header-right">
-					<ul>
-						<li><a href="#">CURRENCY:</a></li>
-						<li>
-							<select>
-								<option>Dollar</option>
-								<option>Euro</option>
-								<option>Pound</option>
-							</select>
-						</li>
-					</ul>
-				</div>
-				<div className="clear"> </div>
-			</div>
+
+      // HEADER
+			<Header />
+
 			<div className="clear"> </div>
 			<div className="sub-header">
 				<div className="logo">
@@ -58,20 +39,20 @@ function App(props) {
 					<div className="clear"> </div>
 				</ul>
 			</div>
-		
+
 			</div>
-			
-		
+
+
 					<div className="image-slider">
-				
+
 					    <ul className="rslides" id="slider1">
 					      <li><img src="images/slider1.jpg" alt="" /></li>
 					      <li><img src="images/slider3.jpg" alt="" /></li>
 					      <li><img src="images/slider1.jpg" alt="" /></li>
 					    </ul>
-					
+
 					</div>
-				
+
 				<div className="content">
 					<div className="products-box">
 					<div className="products">
@@ -202,7 +183,7 @@ function App(props) {
 			</div>
 			</div>
 		</div>
-	
+
       </div>
     );
 }
